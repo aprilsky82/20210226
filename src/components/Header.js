@@ -1,20 +1,21 @@
-import React from 'react';
+import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
     return (
         <header>
           <ul>
               <li>
-                  <a href="/">Main page</a>
+                  <Link to="/">Main page</Link>
               </li>
               <li>
-                  <a href="/members">Members page</a>
+                  <Link to="/members">Members page</Link>
               </li>
               <li>
-                  <a href="/groups">Groups page</a>
+                  <Link to="/groups">Groups page</Link>
               </li>
               <li>
-                  <a href="/mypage">My page</a>
+                  <Link to="/mypage">My page</Link>
               </li>
           </ul>
         </header>
