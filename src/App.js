@@ -1,16 +1,12 @@
 
 // 1 rsc
 import React, { useState } from 'react';
+import Router from "./components/Router";
 
 const App = () => {
 
-
-
-
     return (
-        <div>
-            <h1>hello</h1>
-        </div>
+        <Router />
     );
 };
 
