@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useState, useEffect} from 'react';
 import axios from 'axios'
 
 
@@ -13,11 +13,15 @@ const Main = () => {
             .catch(err => console.log(err))
     }
 
+    useEffect(() => {
+        getdata()
+    }, [])
 
     return (
         <div>
             <h1>{news.length}</h1>
-            <button type={"button"} onClick={getdata}>click</button>
+
+            {/*<button type={"button"} onClick={getdata}>click</button>*/}
         </div>
     );
 };
