@@ -1,6 +1,7 @@
 import React , {useState, useEffect} from 'react';
 import axios from "axios";
 import styled from "styled-components";
+import ImageCard from "../components/ImageCard";
 
 const Container = styled.div`
     padding: 0px 10px;
@@ -13,17 +14,7 @@ const Grid = styled.div`
   grid-gap: 25px;
 `
 
-const Cardview = styled.div`
-  background-color: darkgray;
-`
 
-const List = styled.ul`
-  background-color: darkgray;
-`
-
-const Item = styled.li`
-  color: black;
-`
 
 const Members = () => {
 
@@ -44,18 +35,14 @@ const Members = () => {
         <Container>
             <Grid>
                 {movies.map(movie => (
-                    <Cardview className="card">
-                        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">{movie.title}</h5>
-                                <p className="card-text">{movie.overview.slice(0, 100)}</p>
-                            </div>
-                            <List className="list-group list-group-flush">
-                                <Item className="list-group-item">{movie.release_date}</Item>
-                                <Item className="list-group-item">{movie.vote_average} / 10</Item>
-                                <Item className="list-group-item">Language : {movie.original_language}</Item>
-                            </List>
-                    </Cardview>
+                    <ImageCard
+                        overview={movie.overview}
+                        title={movie.title}
+                        poster={movie.poster_path}
+                        date={movie.release_date}
+                        vote={movie.vote_average}
+                        lan={movie.original_language}
+                    />
                 ))}
 
             </Grid>
