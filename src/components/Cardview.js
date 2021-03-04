@@ -21,7 +21,7 @@ const LinkCss = styled.link`
   color: darkgray;
   padding-bottom: 3%;
 `
-햐
+
 const Cardview = ({title, release_date, overview}) => {
     return (
         <CardView className="card">
