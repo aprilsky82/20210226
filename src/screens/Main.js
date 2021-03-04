@@ -19,9 +19,9 @@ const Main = () => {
     const [news, setNews] = useState([])
     const getdata = async () => {
        await axios
-            .get("http://www.findyourapi.com/api/posts/")
+            .get("https://api.themoviedb.org/3/movie/popular?api_key=8597e491ed6e80f0de12e349eb60ea6e&language=en-US&page=1")
             // .then(res => console.log(">>>>>>", res))
-            .then(res => setNews(res.data))
+            .then(res => setNews(res.data.results))
             .catch(err => console.log(err))
     }
 
@@ -35,7 +35,7 @@ const Main = () => {
                 {news.map(item => (
                     <Cardview
                         title={item.title}
-                        author={item.author_name}
+                        release_date={item.release_date}
                         overview={item.overview}
                     />
                 ))}

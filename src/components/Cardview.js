@@ -7,13 +7,13 @@ const CardView = styled.div`
   background-color: darkgray;
 `
 
-const Cardview = ({title, author, overview}) => {
+const Cardview = ({title, release_date, overview}) => {
     return (
         <CardView className="card">
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
-                <h6 className="card-subtitle mb-2 text-muted">{author}</h6>
-                <p className="card-text">{overview.slice(0, 100)}</p>
+                <h6 className="card-subtitle mb-2 text-muted">{release_date}</h6>
+                <p className="card-text">{overview.slice(0, 150)}</p>
                 <Link to="#" className="card-link">Card link</Link>
                 <Link to="#" className="card-link">Another link</Link>
             </div>
