@@ -12,11 +12,11 @@ const globalStyles = createGlobalStyle`
   }
   body {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 12px;
-    background-color: rgba(20, 20, 20, 1);
-    color: white;
+    font-size: 13px;
+    background-color: whitesmoke;
+    color: #333333;
     padding-top: 70px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 `
 
