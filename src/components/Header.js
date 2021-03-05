@@ -21,11 +21,16 @@ const List = styled.ul`
 `
 
 const Item = styled.li`
-  width: 100px;
+  //width: 100px;
+  //height: 50px;
+  //text-align: center;
+  //font-size: 16px;
+  //font-weight: 800;
+  width: 80px;
   height: 50px;
   text-align: center;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
 `
 
 const SLink = styled(Link)`
@@ -33,7 +38,6 @@ const SLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  
 `
 
 

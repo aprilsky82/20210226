@@ -3,6 +3,7 @@
 import React from 'react';
 import Router from "./components/Router";
 import GlobalStyles from "./components/GlobalStyles";
+import './App.css'
 
 const App = () => {
 
