@@ -1,6 +1,6 @@
 
 // 1 rsc
-import React, { useState } from 'react';
+import React from 'react';
 import Router from "./components/Router";
 import GlobalStyles from "./components/GlobalStyles";
 

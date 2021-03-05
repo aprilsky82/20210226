@@ -15,7 +15,7 @@ const Title = styled.h5`
   padding-bottom: 3%;
 `
 
-const LinkCss = styled.link`
+const LinkCss = styled(Link)`
   font-size: 10px;
   font-weight: 100;
   color: darkgray;
@@ -31,8 +31,8 @@ const Cardview = ({title, release_date, overview}) => {
                 <br />
                 <p className="card-text">{overview.slice(0, 150)}</p>
                 <br />
-                <Link to="#" className="card-link">Card link</Link>
-                <Link to="#" className="card-link">Another link</Link>
+                <LinkCss to="#" className="card-link">Card link</LinkCss>
+                <LinkCss to="#" className="card-link">Another link</LinkCss>
             </div>
         </CardView>
     );
